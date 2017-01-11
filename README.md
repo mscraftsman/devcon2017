@@ -1,2 +1,2 @@
-# devcon2017
-Website of Developers Conference 2016 in Mauritius
+# Developers Conference 2017
+Website of Developers Conference 2017 in Mauritius
