@@ -18,6 +18,8 @@
 'use strict';
 
 if ('serviceWorker' in navigator) {
+  // Improving the "boiler-plate" approach
+  // See https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration
   window.addEventListener('load', function() {
     // Your service-worker.js *must* be located at the top-level directory relative to your site.
     // It won't be able to control pages unless it's located at the same level or higher than them.
