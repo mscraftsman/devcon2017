@@ -11,6 +11,7 @@
 
 /* THANKS */
   Jochen Kirstätter - http://jochen.kirstaetter.name/
+  Sean Mangar - http://seanmangar.com/
   Nirvan (Tejas) Pagooah - http://graphicstemple.io/
 
 /* SITE */
