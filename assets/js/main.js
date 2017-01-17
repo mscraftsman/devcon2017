@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-    function fitVids(){
-        //$('.section-container').fitVids();
-    }
-
     function menu(){
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
@@ -18,9 +14,12 @@ $(document).ready(function(){
         } else {
             $('[data-id=menu]').removeClass('stacked');
         }
+
+        $('[data-id=menu]').on('click', function(event){
+           $('[data-id=menu]').toggleClass('open');
+        });
     }
 
     menu();
-    fitVids();
 
 });
