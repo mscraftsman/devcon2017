@@ -557,6 +557,7 @@ header .mobile-menu-wrapper button .bars .bar {
   header .mobile-menu-wrapper:last-child {
     margin-right: 0;
   }
+
   header .mobile-menu-wrapper:nth-child(2n) {
     margin-right: 0;
     float: right;
@@ -596,6 +597,12 @@ header .mobile-menu-wrapper button .bars .bar {
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  header .menu-wrapper ul li:last-child {
+    margin-right: 20px;
   }
 }
 
