@@ -10,6 +10,7 @@
   Location: Mauritius
 
 /* THANKS */
+  Humeira Diljore - http://echdee.me
   Jochen Kirstätter - http://jochen.kirstaetter.name/
   Sean Mangar - http://seanmangar.com/
   Nirvan (Tejas) Pagooah - http://graphicstemple.io/
