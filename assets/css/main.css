@@ -452,6 +452,7 @@ header .logo-wrapper a img {
 header .menu-wrapper {
   width: calc(99.9% * 5/6 - (40px - 40px * 5/6));
   padding-top: 21px;
+  padding-right:15px;
 }
 
 header .menu-wrapper:nth-child(1n) {
