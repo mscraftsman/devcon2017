@@ -98,7 +98,8 @@ Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on
 | Onsite Event Benefit | Logo on conference rollup banners Logo on conference programme Logo & sponsorship acknowledgement in keynote Logo exposure on all plasma screens located in the venue Your job listings on conference website (link only) |
 | Fee (incl. VAT) | MUR 20,000.- |
 
-Starting this year, next to the regular packages as in previous years and there are **new, specialised packages** for you to support the Developers Conference.
+Starting this year, , on top of the regular packages available the previous years, we are launching **new, specialised packages** for you to support the Developers Conference.
+
 
 | Speaker Sponsor | |
 | ------- | --- |
