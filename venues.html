@@ -69,43 +69,45 @@
 
     <link rel="stylesheet" href="/assets/css/main.css">
 
-
-
     <script type="application/ld+json">
+    [
         {
-          "@context": "http://schema.org",
-          "@type": "WebSite",
-          "url": "https://conference.mscc.mu",
-          "name": "Developers Conference 2017",
-          "description": "The Biggest Tech Event in Mauritius",
-          "publisher": "Mauritius Software Craftsmanship Community"
-      }
-    </script>
-
-    <script type='application/ld+json'>
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://www.mscc.mu",
+            "logo": "https://www.mscc.mu/images/logo.png"
+        },
         {
-          "@context": "http://www.schema.org",
-          "@type": "Event",
-          "name": "Developers Conference 2017",
-          "url": "https://conference.mscc.mu",
-          "description": "The Biggest Tech Event in Mauritius",
-          "startDate": "30/03/2017 09:00AM",
-          "endDate": "01/04/2017 06:00PM",
-          "eventStatus" : "active",
-          "location": {
-            "@type": "Place",
-            "name": "Voila Hotel Bagatelle",
-            "sameAs": "http://www.voila.mu",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Bagatelle Mall of Mauritius",
-              "addressLocality": "Reduit",
-              "addressRegion": "MU",
-              "postalCode": "80816",
-              "addressCountry": "Mauritius"
-            }
-          }
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "MSCC",
+            "alternateName": "Mauritius Software Craftsmanship Community",
+            "url": "http://www.mscc.mu"
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "name": "Developers Conference 2017",
+            "description": "The event is a free of charge, community-driven, three-days IT tech conference hosted annually in Mauritius. It’s an event full of business opportunities, professional networking, and attendees can learn about latest software development technologies and methodologies, as well as cloud features and infrastructure.",
+            "startDate": "2017-03-30T09:00",
+            "endDate": "2017-04-01T17:30",
+            "url": "https://conference.mscc.mu",
+            "image": "https://conference.mscc.mu/assets/images/banner-280-409.png",
+            "location": {
+                "@type": "Place",
+                "sameAs": "http://www.voilahotel.mu/",
+                "name": "Voila Hotel",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Bagatelle Mall of Mauritius",
+                  "addressLocality": "Reduit",
+                  "addressRegion": "MU",
+                  "addressCountry": "Mauritius"
+                }
+              },
+            "eventStatus": "EventScheduled"
         }
+    ]
     </script>
 </head>
 <body class="type-page">
