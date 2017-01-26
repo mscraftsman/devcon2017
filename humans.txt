@@ -10,11 +10,11 @@
   Location: Mauritius
 
 /* THANKS */
+  Arwin Neil Baichoo - http://arwinneil.github.io/
   Humeira Diljore - http://echdee.me
   Jochen Kirstätter - http://jochen.kirstaetter.name/
   Sean Mangar - http://seanmangar.com/
   Nirvan (Tejas) Pagooah - http://graphicstemple.io/
-  Arwin Neil Baichoo - http://arwinneil.github.io/
 
 /* SITE */
   Standards: HTML5, CSS3, SCSS
