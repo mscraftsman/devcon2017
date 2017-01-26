@@ -69,6 +69,32 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <script type="application/ld+json">
+    [{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://www.mscc.mu",
+    "logo": "https://www.mscc.mu/images/logo.png"
+    },{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "MSCC",
+    "alternateName": "Mauritius Software Craftsmanship Community",
+    "url": "http://www.mscc.mu"
+    },{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "Developers Conference 2017",
+    "startDate" : "2017-03-30T09:00",
+    "url" : "https://conference.mscc.mu",
+    "location" : {
+        "@type" : "Place",
+        "sameAs" : "http://www.voilahotel.mu/",
+        "name" : "Voila Hotel",
+        "address" : "Bagatelle, Reduit, Mauritius"
+      }
+    }]
+    </script>
 </head>
 <body class="type-homepage">
 <header class="header-container" data-id="menu">
@@ -511,11 +537,14 @@
             <div class="mscc-name">Mauritius Software Craftsmanship Community</div>
 
             <div class="social-media-wrapper">
-                <a href="https://www.facebook.com/MauritiusSoftwareCraftsmanshipCommunity/" target="_blank" rel="noopener"><i class="ion-social-facebook"></i></a>
-                <a href="https://plus.google.com/109537765013108874281" target="_blank" rel="noopener"><i class="ion-social-googleplus"></i></a>
-                <a href="https://twitter.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-twitter"></i></a>
-                <a href="https://www.linkedin.com/groups/5033639" target="_blank" rel="noopener"><i class="ion-social-linkedin"></i></a>
-                <a href="https://github.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-github"></i></a>
+                <span itemscope itemtype="http://schema.org/Organization">
+                    <link itemprop="url" href="https://www.mscc.mu">
+                    <a itemprop="sameAs" href="https://www.facebook.com/MauritiusSoftwareCraftsmanshipCommunity/" target="_blank" rel="noopener"><i class="ion-social-facebook"></i></a>
+                    <a itemprop="sameAs" href="https://plus.google.com/109537765013108874281" target="_blank" rel="noopener"><i class="ion-social-googleplus"></i></a>
+                    <a itemprop="sameAs" href="https://twitter.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-twitter"></i></a>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/groups/5033639" target="_blank" rel="noopener"><i class="ion-social-linkedin"></i></a>
+                    <a itemprop="sameAs" href="https://github.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-github"></i></a>
+                </span>
             </div>
 
         </div>
