@@ -13,7 +13,7 @@ The Developers Conference is planned in partnership with other IT user groups in
 	Time:	09:00 hrs – ~17:30 hrs daily
 	Venues:	Voila Hotel
 		Flying Dodo Brewing Company
-		Mall of Mauritius, Batagelle, Mauritius
+		Mall of Mauritius, Bagatelle, Mauritius
 
 ### Purpose
 The aim of the conference is to provide local software developers a buffet of tools, practices and principles applicable to tackling current challenges in the Mauritian software development environment. From keeping up to date with the latest technologies and trends to tackling the challenges of working in large enterprise systems – it's a buffet of experiences, ideas and pragmatic advice as well as an opportunity to connect with peers across the industry.
