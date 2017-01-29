@@ -250,6 +250,7 @@ table{border-collapse:collapse;border-spacing:0}
   background-image: url(../images/Voila_pana_3.jpg);
   background-size: cover;
   display: block;
+  min-height: 500px;
 }
 
 .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-venue-second {
@@ -372,10 +373,10 @@ table{border-collapse:collapse;border-spacing:0}
     min-height: 35vh;
   }
   .container-fw-half .right-container-wrapper {
-    order: 1;
+    order: 2;
   }
   .container-fw-half .left-container-wrapper {
-    order: 2;
+    order: 1;
     margin-right: 0 !important;
   }
 }
