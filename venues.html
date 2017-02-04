@@ -403,20 +403,20 @@
         var map = new google.maps.Map($('.map')[0], {
             zoom: 15,
             styles: mapStyle,
-            center: new google.maps.LatLng(-20.2238687,57.4933112)
+            center: new google.maps.LatLng(-20.2234308,57.4942285)
         });
 
         var marker = new google.maps.Marker({
             map: map,
             icon: 'https://conference.mscc.mu/assets/images/favicon/mscc-touch-icon-48x48-fg.png',
-            position: new google.maps.LatLng(-20.2238687,57.4933112)
+            position: new google.maps.LatLng(-20.2234308,57.4942285)
         });
 
         var info = new SnazzyInfoWindow({
             marker: marker,
             content: '<h1>Voila Hotel</h1>' +
                 '<h2>Mall of Mauritius</h2>' +
-                '<p>We are right here! (-20.2238687,57.4933112)</p>',
+                '<p>We are right here! (-20.2234308,57.4942285)</p>',
             closeOnMapClick: false
         });
         info.open();
