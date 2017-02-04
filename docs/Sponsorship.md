@@ -3,7 +3,7 @@
 ## Introduction
 After the success of previous years, the Mauritius Software Craftsmanship Community (MSCC) is organising the third edition of the Developers Conference in partnership with local and international companies.
 
-Just like last year, the event is a free of charge, community-driven, three-days IT tech conference hosted annually in Mauritius. It’s an event full of business opportunities and professional networking. Attendees can learn about latest software development technologies, methodologies, as well as cloud features and infrastructure.
+Just like last year, the event is a **free of charge, community-driven**, three-days IT tech conference hosted annually in Mauritius. It’s an event full of **business opportunities** and **professional networking**. Attendees can learn about latest software development technologies and methodologies, as well as cloud features and infrastructure.
 
 The Developers Conference is planned in partnership with other IT user groups in Mauritius.
 
@@ -112,7 +112,7 @@ Starting this year, , on top of the regular packages available the previous year
 | ------- | --- |
 | Speakers’ dinner to take place on 1 April at Flying Dodo after closing the conference. All speakers and organising committee members will be invited to attend the dinner – approx. 60 guests in total. |
 | Limit | Limited to 1 sponsor |
-| Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on conference website (link only) Announcement through social media channels of the MSCC |
+| Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on conference website (link only) |
 | Onsite Event Benefit | Logo on conference rollup banners Logo on conference programme Logo & sponsorship acknowledgement in keynote Logo exposure on all plasma screens located in the venue Your own rollup banner in one location of your choice Your own rollup banner during Speakers’ Dinner (Flying Dodo) Your own Flyer and/or gadget in folder (provided by you) Your job listings on conference website (link only) |
 | Fee (incl. VAT) | Estimated MUR 50,000.- |
 
@@ -120,7 +120,7 @@ Starting this year, , on top of the regular packages available the previous year
 | ------- | --- |
 | Responsible for the acquisition of the attendee welcome package, including conference lanyards, attendee name badges, conference programme/flyer and delegate bags. |
 | Limit | Limited to 1 sponsor |
-| Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on conference website (link only) Announcement through social media channels of the MSCC |
+| Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on conference website (link only) |
 | Onsite Event Benefit | Logo on conference rollup banners Logo on conference programme Logo & sponsorship acknowledgement in keynote Logo exposure on all plasma screens located in the venue Your own rollup banner in one location of your choice Your own Flyer and/or gadget in folder (provided by you) Your job listings on conference website (link only) |
 | Fee (incl. VAT) | Estimated MUR 40,000.- |
 
