@@ -1,33 +1,34 @@
 # Sponsorship Proposal
 
 ## Introduction
-After the success of previous years the Mauritius Software Craftsmanship Community (MSCC) is organising the third edition of the Developers Conference in partnership with local and international companies.
+After the success of previous years, the Mauritius Software Craftsmanship Community (MSCC) is organising the third edition of the Developers Conference in partnership with local and international companies.
 
 Just like last year, the event is a **free of charge, community-driven**, three-days IT tech conference hosted annually in Mauritius. It’s an event full of **business opportunities** and **professional networking**. Attendees can learn about latest software development technologies and methodologies, as well as cloud features and infrastructure.
 
 The Developers Conference is planned in partnership with other IT user groups in Mauritius.
+
 
 ### Details
 	Date:	30 March – 1 April 2017
 	Time:	09:00 hrs – ~17:30 hrs daily
 	Venues:	Voila Hotel
 		Flying Dodo Brewing Company
-		Mall of Mauritius, Batagelle, Mauritius
+		Mall of Mauritius, Bagatelle, Mauritius
 
 ### Purpose
-The aim of the conference is to provide local software developers a buffet of tools, practices, and principles applicable to current challenges in the Mauritian software development environment. From keeping up to date with the latest technologies and trends to tackling the challenges of working in large enterprise systems – it's a buffet of experiences, ideas, and pragmatic advice as well as an opportunity to connect with peers across the industry.
+The aim of the conference is to provide local software developers a buffet of tools, practices and principles applicable to tackling current challenges in the Mauritian software development environment. From keeping up to date with the latest technologies and trends to tackling the challenges of working in large enterprise systems – it's a buffet of experiences, ideas and pragmatic advice as well as an opportunity to connect with peers across the industry.
 
-When the MSCC was founded back in 2013, it quickly became clear that our tropical island has a certain lack of informational and technical events. During some monthly meetups we spoke about this situation and that it would be very interesting and delightful to organise such an event.
+When the MSCC was founded back in 2013, it quickly became clear that our tropical island had a certain lack of informational and technical events. During some monthly meetups, we spoke about this situation and that it would be very interesting and delightful to organise such an event.
 
 Our monthly MSCC meetings are usually topic-centred and most amazingly we had solid technical information and good presenters (even though none is a professional trainer) during the last couple of month. The Developers Conference is just the consequent development of this process - our thirst for more information in the world of modern IT.
 
 ### Why sponsor the Developers Conference?
 Reach out and engage with a community of IT professionals and students in IT. 
 
-Sponsors of the Developers Conference are exposed to highly skilled tech people in Mauritius and in the region. Unlike other events, participants of the Developers Conference are generally people who craft software using a wide variety of skills that help make the lives of people easier. 
+Sponsors of the Developers Conference are exposed to highly skilled tech people in Mauritius and in the region. Unlike other events, participants of the Developers Conference are generally people who craft software using a wide variety of skills that helps make the lives of people easier. 
 
 ### Attendee Profile
-The event targets professional software developers which work in small to large sized organisations and who develop systems of all sizes for enterprise companies. The event aims to attract 500 to 700 attendees across industries such as financial services, web agencies, media houses, telco’s etc.
+The event targets professional software developers who work in small to large sized organisations and who develop systems of all sizes for enterprise companies. The event aims to attract 500 to 700 attendees across industries such as financial services, web agencies, media houses, telco’s etc.
 
 ### What’s in for me?
  * Access to influential professionals
@@ -50,7 +51,7 @@ The planned schedule of the Developers Conference will provide up to **3-4 track
 | Implementation, Cross platform & Testing | |
 | ------- | --- |
 | Topics | Modern software application development for desktop, web and mobile platforms. Various programming languages, frameworks and platforms. |
-| Keywords | React, VueJS, Angular, Xamarin, Cordova, Ionic, Meteor, Material, REST API, Authentication, Identity Management, Docker, GitHub, Visual Studio Team Services, PHP, Symfony, Laravel, Ruby on Rails |
+| Keywords | React, VueJS, Angular, Xamarin, Cordova, Ionic, Meteor, Material, REST API, Authentication, Identity Management, Docker, GitHub, Visual Studio Team Services, PHP, Drupal, Symfony, Laravel, Ruby on Rails |
 
 | Backend solutions & Cloud features | |
 | ------- | --- |
@@ -64,9 +65,10 @@ The planned schedule of the Developers Conference will provide up to **3-4 track
 
 
 ### Sponsorship Packages
-Compared to the previous years we decided to extend the portfolio of business and advertisement opportunities for partners and sponsors.
+Compared to the previous years, we have decided to extend the portfolio of business and advertisement opportunities for partners and sponsors.
 
 All sponsors will be announced through social media channels of the MSCC before the conference.
+
 
 | Platinum | |
 | ------- | --- |
@@ -96,7 +98,8 @@ Pre-Event Benefit | Logo on website Logo on HTML invitation Your job listings on
 | Onsite Event Benefit | Logo on conference rollup banners Logo on conference programme Logo & sponsorship acknowledgement in keynote Logo exposure on all plasma screens located in the venue Your job listings on conference website (link only) |
 | Fee (incl. VAT) | MUR 20,000.- |
 
-Starting this year, next to the regular packages as in previous years and there are **new, specialised packages** for you to support the Developers Conference.
+Starting this year, , on top of the regular packages available the previous years, we are launching **new, specialised packages** for you to support the Developers Conference.
+
 
 | Speaker Sponsor | |
 | ------- | --- |
@@ -135,11 +138,15 @@ Starting this year, next to the regular packages as in previous years and there 
 | Onsite Event Benefit | Logo on conference rollup banners Logo on conference programme Logo & sponsorship acknowledgement in keynote Logo exposure on all plasma screens located in the venue Your own rollup banner during Happy Hour (Flying Dodo) Your job listings on conference website (link only) |
 | Fee (incl. VAT) | Estimated MUR 25,000.- |
 
-Sponsorship benefits are dependent on the time at which the sponsorship agreement is signed and production lead times. 
 
-All sponsorship opportunities to be finalised by 20 March 2017.
+Sponsorship benefits are dependent on 
+1.	The time at which the sponsorship agreement is signed 
+2.	The production lead times. 
 
-Other promotional opportunities upon request. Please get in touch with us to discuss your requirements.
+All sponsorship opportunities are to be finalised by 20 March 2017.
+
+Other promotional opportunities are available upon request. Please get in touch with us to discuss your requirements.
+
 
 ### Contact Details
 Should you wish to participate and are interested to discuss details of a certain sponsorship package, please reach out to:
