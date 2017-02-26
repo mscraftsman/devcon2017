@@ -964,7 +964,7 @@ header .mobile-menu-wrapper button .bars .bar {
 }
 
 .intro-container {
-  background: url(../images/cover-bg.png) repeat;
+  background: url(../images/cover-bg.jpg) repeat;
   background-size: 75%;
   background-color: #000000;
   height: 100vh;
@@ -1078,6 +1078,106 @@ header .mobile-menu-wrapper button .bars .bar {
   text-align: center;
   box-sizing: border-box;
   transform: rotate(-45deg);
+}
+
+/* iOS6 & iOS7 relative units fallback */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.intro-container {
+		height: 768px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.intro-container {
+		height: 1024px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+	.intro-container {
+		height: 320px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+	.intro-container {
+		height: 568px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	.intro-container {
+		height: 320px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.intro-container {
+		height: 480px;
+	}
+	
+	.intro-container .intro-wrapper .content-wrapper {
+		transform: translate(-50%, -50%);
+		margin: 0;
+		position: absolute;
+		top: 15%;
+		left: 0%;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 @media (max-width: 1099px) {
