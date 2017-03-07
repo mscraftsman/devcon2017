@@ -298,9 +298,6 @@ Fonts by Nirvan
   width: 100%;
 }
 
-.container-fw-half .left-container-wrapper {
-  padding: 40px;
-}
 
 @media (max-width: 1024px) {
   .container-fw-half .left-container-wrapper, .container-fw-half .right-container-wrapper {
@@ -390,10 +387,10 @@ Fonts by Nirvan
     min-height: 35vh;
   }
   .container-fw-half .right-container-wrapper {
-    order: 1;
+    order: 2;
   }
   .container-fw-half .left-container-wrapper {
-    order: 2;
+    order: 1;
     margin-right: 0 !important;
   }
 }
