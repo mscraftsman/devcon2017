@@ -260,6 +260,27 @@ Fonts by Nirvan
   min-height: 500px;
 }
 
+.container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-first {
+  background-image: url(../images/mmc.jpg);
+  background-size: cover;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-second {
+  background-image: url(../images/lugm.jpg);
+  background-size: cover;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
+  background-image: url(../images/mscc2013.png);
+  background-size: cover;
+  display: block;
+  min-height: 500px;
+}
+
 .container-fw-half .left-container-wrapper.no-padding, .container-fw-half .right-container-wrapper.no-padding {
   padding: 0;
 }
@@ -374,7 +395,8 @@ Fonts by Nirvan
     max-height: 40vh;
     min-height: 40vh;
   }
-  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper .map {
+  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper .map,
+  .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-third {
     min-height: 300px;
   }
 }
