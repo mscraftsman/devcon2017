@@ -31,7 +31,6 @@ $(document).ready(function(){
     var apiURLMakerCon        = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + sheet[3] + '/public/values?alt=json';
     var apiURLLinuxFest       = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + sheet[4] + '/public/values?alt=json';
 
-      https://spreadsheets.google.com/feeds/worksheets/1WOdGIWVatrnhJoJoH4pgsdwtMhBce9kH1aI-AoBlBW0/public/full
 
     var dataNames            = ['sessionsThursday', 'sessionsFriday', 'sessionsSaturday', 'sessionsMakerCon', 'sessionsLinuxFest'];
     var dataTimings          = ['timingsThursday', 'timingsFriday', 'timingsSaturday', 'timingsMakerCon', 'timingsLinuxFest'];
@@ -99,18 +98,18 @@ $(document).ready(function(){
           $.get(apiURLFriday, function(data) {
             var timeArr = [];
             //some cleansing process
-            $.each(data.feed.entry, function(index, value){
-              var obj = value;
-              if(obj.gsx$_cn6ca){
-                obj.gsx$room = obj.gsx$_cn6ca;
-                delete obj.gsx$_cn6ca;
-              } else {
-                // create blank object & assign.
-                var roomObject = new Object();
-                roomObject.$t = '';
-                obj.gsx$room = roomObject;
-              }
-            });
+            // $.each(data.feed.entry, function(index, value){
+            //   var obj = value;
+            //   if(obj.gsx$_cn6ca){
+            //     obj.gsx$room = obj.gsx$_cn6ca;
+            //     delete obj.gsx$_cn6ca;
+            //   } else {
+            //     // create blank object & assign.
+            //     var roomObject = new Object();
+            //     roomObject.$t = '';
+            //     obj.gsx$room = roomObject;
+            //   }
+            // });
 
             $('[data-id=session-loader-friday]').fadeOut({
               done: function(){
