@@ -725,6 +725,11 @@ Fonts by Nirvan
   clear: both;
 }
 
+.container-fw-half .left-container-wrapper p a, .container-fw-half .right-container-wrapper p a {
+  color: #FF3A00;
+  text-decoration: none;
+}
+
 .container-fw-half .left-container-wrapper small, .container-fw-half .left-container-wrapper h1, .container-fw-half .left-container-wrapper h2, .container-fw-half .left-container-wrapper h3, .container-fw-half .left-container-wrapper h4, .container-fw-half .left-container-wrapper a, .container-fw-half .left-container-wrapper button, .container-fw-half .right-container-wrapper small, .container-fw-half .right-container-wrapper h1, .container-fw-half .right-container-wrapper h2, .container-fw-half .right-container-wrapper h3, .container-fw-half .right-container-wrapper h4, .container-fw-half .right-container-wrapper a, .container-fw-half .right-container-wrapper button {
   line-height: normal;
   line-height: initial;
@@ -733,6 +738,7 @@ Fonts by Nirvan
 .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-first {
   background-image: url(../images/Voila_pana_3.jpg);
   background-size: cover;
+  background-position: center center;
   display: block;
   min-height: 500px;
 }
@@ -740,6 +746,46 @@ Fonts by Nirvan
 .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-venue-second {
   background-image: url(../images/flying_dodo.jpg);
   background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-first {
+  background-image: url(../images/mmc.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-second {
+  background-image: url(../images/lugm-bg-installfest.jpg);
+  background-size: cover;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-php {
+  background-image: url(../images/phpmauritius.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-symfony {
+  background-image: url(../images/symfony.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
+  background-image: url(../images/devcon_2016.jpg);
+  background-size: cover;
+  background-position: center center;
   display: block;
   min-height: 500px;
 }
@@ -858,7 +904,7 @@ Fonts by Nirvan
     max-height: 40vh;
     min-height: 40vh;
   }
-  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper .map {
+  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper .map {
     min-height: 300px;
   }
 }
@@ -1486,16 +1532,13 @@ header .mobile-menu-wrapper button .bars .bar {
 }
 
 .intro-container .intro-wrapper .content-wrapper {
-  display: block;
-  margin: 200px auto 50px;
-  text-align: center;$
-  background: #000;
-}
-
-@media screen and (max-width: 768px) {
-  .intro-container .intro-wrapper .content-wrapper {
-    margin-top: 150px;
-  }
+  transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .intro-container .intro-wrapper .content-wrapper img {
@@ -1523,8 +1566,14 @@ header .mobile-menu-wrapper button .bars .bar {
 }
 
 .intro-container .intro-wrapper .content-wrapper-footer {
-  display: block;
-  text-align:center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
   padding: 0 10px;
 }
 
@@ -3672,7 +3721,6 @@ footer .footer-second-lvl-container .footer-column .copyright i {
   right: -1px;
   margin-left: 0px;
 }
-
 
 html {
   box-sizing: border-box;
