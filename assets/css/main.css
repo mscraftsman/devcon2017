@@ -725,6 +725,11 @@ Fonts by Nirvan
   clear: both;
 }
 
+.container-fw-half .left-container-wrapper p a, .container-fw-half .right-container-wrapper p a {
+  color: #FF3A00;
+  text-decoration: none;
+}
+
 .container-fw-half .left-container-wrapper small, .container-fw-half .left-container-wrapper h1, .container-fw-half .left-container-wrapper h2, .container-fw-half .left-container-wrapper h3, .container-fw-half .left-container-wrapper h4, .container-fw-half .left-container-wrapper a, .container-fw-half .left-container-wrapper button, .container-fw-half .right-container-wrapper small, .container-fw-half .right-container-wrapper h1, .container-fw-half .right-container-wrapper h2, .container-fw-half .right-container-wrapper h3, .container-fw-half .right-container-wrapper h4, .container-fw-half .right-container-wrapper a, .container-fw-half .right-container-wrapper button {
   line-height: normal;
   line-height: initial;
@@ -733,6 +738,7 @@ Fonts by Nirvan
 .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-first {
   background-image: url(../images/Voila_pana_3.jpg);
   background-size: cover;
+  background-position: center center;
   display: block;
   min-height: 500px;
 }
@@ -740,6 +746,46 @@ Fonts by Nirvan
 .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-venue-second {
   background-image: url(../images/flying_dodo.jpg);
   background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-first {
+  background-image: url(../images/mmc.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-second {
+  background-image: url(../images/lugm-bg-installfest.jpg);
+  background-size: cover;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-php {
+  background-image: url(../images/phpmauritius.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-symfony {
+  background-image: url(../images/symfony.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
+  background-image: url(../images/devcon_2016.jpg);
+  background-size: cover;
+  background-position: center center;
   display: block;
   min-height: 500px;
 }
@@ -858,7 +904,7 @@ Fonts by Nirvan
     max-height: 40vh;
     min-height: 40vh;
   }
-  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper .map {
+  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper .map {
     min-height: 300px;
   }
 }
@@ -1487,6 +1533,10 @@ header .mobile-menu-wrapper button .bars .bar {
 
 .intro-container .intro-wrapper .content-wrapper {
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   margin: 0;
   position: absolute;
   top: 50%;
@@ -3674,100 +3724,6 @@ footer .footer-second-lvl-container .footer-column .copyright i {
 .si-has-border .si-pointer-bg-right {
   right: -1px;
   margin-left: 0px;
-}
-
-/* iOS6 & iOS7 relative units fallback */
-/* ipad */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .intro-container {
-    height: 768px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .intro-container {
-    height: 1024px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* iphone5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .intro-container {
-    height: 320px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .intro-container {
-    height: 568px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* iPhone 4 */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .intro-container {
-    height: 320px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .intro-container {
-    height: 480px;
-  }
-  .intro-container .intro-wrapper .content-wrapper {
-    transform: translate(-50%, -50%);
-    margin: 0;
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
 }
 
 html {
