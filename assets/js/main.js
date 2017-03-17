@@ -20,6 +20,7 @@ $(document).ready(function(){
     });
   }
 
+  // Loads sessions data from spreadsheet
   function loadSessionsData(){
 
     var key                  = '1WOdGIWVatrnhJoJoH4pgsdwtMhBce9kH1aI-AoBlBW0';
@@ -160,9 +161,44 @@ $(document).ready(function(){
     });
   }
 
+  // Loads speakers data from spreadsheet
+  function loadSpeakers(){
+    var key                  = '1WOdGIWVatrnhJoJoH4pgsdwtMhBce9kH1aI-AoBlBW0';
+    var sheet                = 'oyw720';
+    var apiSpeakers          = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + sheet + '/public/values?alt=json';
+
+    var view = new Vue({
+      el: '[data-view=speakers]',
+      data: {
+        speakers: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      methods: {
+        fetchData: function () {
+          var self = this;
+          // Speakers
+          $.get(apiSpeakers, function(data) {
+            $('[data-id=speakers-loader]').fadeOut({
+              done: function(){
+                self.speakers = data.feed.entry;
+                console.log(self.speakers);
+              }
+            });
+          });
+        }
+      }
+    });
+
+  }
+
   menu();
 
   if($('body').hasClass('page-sessions')){
     loadSessionsData();
+  }
+  if($('body').hasClass('type-homepage')){
+    loadSpeakers();
   }
 });
