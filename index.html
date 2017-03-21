@@ -209,64 +209,29 @@
   <div class="container-fw">
     <div class="section-title-wrapper">
       <small>We're in good company!</small>
-      <h2>Our sponsors from last year</h2>
+      <h2>Our sponsors</h2>
     </div>
     <div class="section-content-wrapper">
-      <div class="sponsors-container">
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/lexpress.jpg" alt=""></a>
+      <div class="sponsors-container" data-view="sponsors">
+
+        <!-- Preloader -->
+        <div class="loader-container" data-id="sponsors-loader">
+          <div class="loader-wrapper-one">
+            <div class="loader-wrapper-two">
+              <div class="loader-logo">
+                <img src="/assets/images/logo.svg" alt="MSCC Logo">
+              </div>
+            </div>
+          </div>
+          <h3>Loading sponsors</h3>
         </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/ictio.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/Graphics_Temple.jpg" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/ios.jpg" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/BrandMark_Telerik_Horizontal_Big_Color.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/jetbrains.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/redgate_logo_2016.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/pluralsight-logo-black-500x155-v1.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/expatblog-logo-flat-vert-web.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/RossConsultingLogo.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/Checkout_Large.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/Esokia_logo_RGB.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/nVisionIT.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/Turbine_logo_quad.jpg" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/MSFT_logo_rgb_C-Gray.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/lsldigital.png" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/OReillyM_logo_box75(lg)_hex.jpg" alt=""></a>
-        </div>
-        <div class="sponsor-wrapper">
-          <a href="#" rel="noopener"><img src="/assets/images/sponsors/ndepend.png" alt=""></a>
-        </div>
+        <!-- Preloader -->
+
+        <template v-for="sponsor in sponsors">
+          <div class="sponsor-wrapper">
+            <a target="_blank" v-bind:href="sponsor.gsx$url.$t" rel="noopener"><img v-bind:src="'/assets/images/sponsors/' + sponsor.gsx$image.$t" v-bind:alt="sponsor.gsx$partner.$t"></a>
+          </div>
+        </template>
       </div>
       <div class="sponsors-become-button-container">
         <a href="https://goo.gl/tAOqjW" class="become-button" target="_blank" rel="noopener">Become a Sponsor <i class="ion-chevron-right"></i></a>

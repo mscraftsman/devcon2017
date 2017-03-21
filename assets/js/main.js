@@ -190,7 +190,37 @@ $(document).ready(function(){
         }
       }
     });
+  }
 
+  // Loads sponsors data
+  function loadSponsors(){
+    var key                  = '1WOdGIWVatrnhJoJoH4pgsdwtMhBce9kH1aI-AoBlBW0';
+    var sheet                = 'ogt46nu';
+    var apiSponsors          = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + sheet + '/public/values?alt=json';
+
+    var view = new Vue({
+      el: '[data-view=sponsors]',
+      data: {
+        sponsors: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      methods: {
+        fetchData: function () {
+          var self = this;
+          // Speakers
+          $.get(apiSponsors, function(data) {
+            $('[data-id=sponsors-loader]').fadeOut({
+              done: function(){
+                self.sponsors = data.feed.entry;
+                console.log(self.sponsors);
+              }
+            });
+          });
+        }
+      }
+    });
   }
 
   menu();
@@ -200,5 +230,6 @@ $(document).ready(function(){
   }
   if($('body').hasClass('type-homepage')){
     loadSpeakers();
+    loadSponsors();
   }
 });
