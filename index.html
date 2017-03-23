@@ -229,7 +229,7 @@
       <div class="sponsors-container" data-view="sponsors">
         <template v-for="sponsor in sponsors">
           <div class="sponsor-wrapper">
-            <a target="_blank" v-bind:href="sponsor.gsx$url.$t" rel="noopener"><img v-bind:src="'/assets/images/sponsors/' + sponsor.gsx$image.$t" v-bind:alt="sponsor.gsx$partner.$t"></a>
+            <a target="_blank" v-bind:href="sponsor.gsx$url.$t + '/?utm_source=devconmru&utm_medium=banner&utm_campaign=sponsor'" rel="noopener"><img v-bind:src="'/assets/images/sponsors/' + sponsor.gsx$image.$t" v-bind:alt="sponsor.gsx$partner.$t"></a>
           </div>
         </template>
       </div>
@@ -368,7 +368,7 @@
                     <div class="job-title">{{job.gsx$jobtitle.$t}}</div>
                   </div>
                   <div class="apply-wrapper">
-                    <div class="job-apply"><a v-bind:href="job.gsx$linktojoblisting.$t" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
+                    <div class="job-apply"><a v-bind:href="job.gsx$linktojoblisting.$t + '/?utm_source=devconmru&utm_medium=link&utm_campaign=job'" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
                   </div>
                 </div>
               </template>
