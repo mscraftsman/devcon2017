@@ -137,7 +137,7 @@
         <li><a href="sessions.html">Sessions</a></li>
         <li><a href="/#sponsors">Sponsors</a></li>
         <li><a href="/#speakers">Speakers</a></li>
-        <li><a href="#attendees.html">Attendees</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
         <li><a href="extras.html">Extras</a></li>
         <li><a href="mailto:conference@mscc.mu">Contact</a></li>
       </ul>
@@ -212,21 +212,21 @@
       <h2>Our sponsors</h2>
     </div>
     <div class="section-content-wrapper">
-      <div class="sponsors-container" data-view="sponsors">
 
-        <!-- Preloader -->
-        <div class="loader-container" data-id="sponsors-loader">
-          <div class="loader-wrapper-one">
-            <div class="loader-wrapper-two">
-              <div class="loader-logo">
-                <img src="/assets/images/logo.svg" alt="MSCC Logo">
-              </div>
+      <!-- Preloader -->
+      <div class="loader-container" data-id="sponsors-loader">
+        <div class="loader-wrapper-one">
+          <div class="loader-wrapper-two">
+            <div class="loader-logo">
+              <img src="/assets/images/logo.svg" alt="MSCC Logo">
             </div>
           </div>
-          <h3>Loading sponsors</h3>
         </div>
-        <!-- Preloader -->
+        <h3>Loading sponsors</h3>
+      </div>
+      <!-- Preloader -->
 
+      <div class="sponsors-container" data-view="sponsors">
         <template v-for="sponsor in sponsors">
           <div class="sponsor-wrapper">
             <a target="_blank" v-bind:href="sponsor.gsx$url.$t" rel="noopener"><img v-bind:src="'/assets/images/sponsors/' + sponsor.gsx$image.$t" v-bind:alt="sponsor.gsx$partner.$t"></a>
@@ -344,62 +344,44 @@
         <h2>Jobs</h2>
       </div>
       <div class="section-content-wrapper">
-        <div class="jobs-container">
-          <!--
-                              <div class="job-wrapper">
-                                  <div class="title-company-wrapper">
-                                      <div class="job-company">Mauritius Software Engineering Company</div>
-                                      <div class="job-title">Software Engineer</div>
-                                  </div>
-                                  <div class="apply-wrapper">
-                                      <div class="job-apply"><a href="#" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
-                                  </div>
-                              </div>
 
-                              <div class="job-wrapper">
-                                  <div class="title-company-wrapper">
-                                      <div class="job-company">Mauritius Software Engineering Company</div>
-                                      <div class="job-title">Software Engineer</div>
-                                  </div>
-                                  <div class="apply-wrapper">
-                                      <div class="job-apply"><a href="#" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
-                                  </div>
-                              </div>
-
-                              <div class="job-wrapper">
-                                  <div class="title-company-wrapper">
-                                      <div class="job-company">Mauritius Software Engineering Company</div>
-                                      <div class="job-title">Software Engineer</div>
-                                  </div>
-                                  <div class="apply-wrapper">
-                                      <div class="job-apply"><a href="#" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
-                                  </div>
-                              </div>
-
-                              <div class="job-wrapper">
-                                  <div class="title-company-wrapper">
-                                      <div class="job-company">Mauritius Software Engineering Company</div>
-                                      <div class="job-title">Software Engineer</div>
-                                  </div>
-                                  <div class="apply-wrapper">
-                                      <div class="job-apply"><a href="#" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
-                                  </div>
-                              </div>
-
-                              <div class="job-wrapper">
-                                  <div class="title-company-wrapper">
-                                      <div class="job-company">Mauritius Software Engineering Company</div>
-                                      <div class="job-title">Software Engineer</div>
-                                  </div>
-                                  <div class="apply-wrapper">
-                                      <div class="job-apply"><a href="#" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
-                                  </div>
-                              </div>
-          -->
-
-          <div class="job-wrapper no-jobs">
-            Currently there are no active job listings. Stay tuned.
+        <!-- Preloader -->
+        <div class="loader-container" data-id="jobs-loader">
+          <div class="loader-wrapper-one">
+            <div class="loader-wrapper-two">
+              <div class="loader-logo">
+                <img src="/assets/images/logo.svg" alt="MSCC Logo">
+              </div>
+            </div>
           </div>
+          <h3>Loading jobs</h3>
+        </div>
+        <!-- Preloader -->
+
+        <div class="jobs-container" data-view="jobs">
+          <template v-if="jobs != null">
+            <template v-for="(job, index) in jobs">
+              <template v-if="job.gsx$approved.$t == 1 && index <= 5">
+                <div class="job-wrapper" v-bind:data-job="index">
+                  <div class="title-company-wrapper">
+                    <div class="job-company">{{job.gsx$companyemployer.$t}}</div>
+                    <div class="job-title">{{job.gsx$jobtitle.$t}}</div>
+                  </div>
+                  <div class="apply-wrapper">
+                    <div class="job-apply"><a v-bind:href="job.gsx$linktojoblisting.$t" target="_blank" rel="noopener">Apply <i class="ion-chevron-right"></i></a></div>
+                  </div>
+                </div>
+              </template>
+            </template>
+            <div class="more-jobs-wrapper">
+              <a href="#">View more jobs</a>
+            </div>
+          </template>
+          <template v-else>
+            <div class="job-wrapper no-jobs">
+              Currently there are no active job listings. Stay tuned.
+            </div>
+          </template>
 
         </div>
       </div>
@@ -443,7 +425,7 @@
           <li><a href="sessions.html">Sessions</a></li>
           <li><a href="/#sponsors">Sponsors</a></li>
           <li><a href="/#speakers">Speakers</a></li>
-          <li><a href="#attendees.html">Attendees</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
           <li><a href="extras.html">Extras</a></li>
         </ul>
       </div>
@@ -460,7 +442,7 @@
 <script async type="text/javascript" src="/assets/js/vendor/jquery.fitvids.min.js"></script>
 <script async type="text/javascript" src="/assets/js/service-worker-registration.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/underscore-min.js"></script>
-<script type="text/javascript" src="assets/js/vendor/vue.js"></script>
+<script type="text/javascript" src="assets/js/vendor/vue.min.js"></script>
 <script async type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -183,7 +183,7 @@ $(document).ready(function(){
             $('[data-id=speakers-loader]').fadeOut({
               done: function(){
                 self.speakers = data.feed.entry;
-                console.log(self.speakers);
+                //console.log(self.speakers);
               }
             });
           });
@@ -214,7 +214,36 @@ $(document).ready(function(){
             $('[data-id=sponsors-loader]').fadeOut({
               done: function(){
                 self.sponsors = data.feed.entry;
-                console.log(self.sponsors);
+                //console.log(self.sponsors);
+              }
+            });
+          });
+        }
+      }
+    });
+  }
+
+  // Loads jobs data
+  function loadJobs(){
+    var apiJobs              = 'https://spreadsheets.google.com/feeds/list/11-aWaLzJVtGzYGGMLxgMk0iO3SwIfebNptTNv0QPsxw/ot16nkd/public/values?alt=json';
+
+    var view = new Vue({
+      el: '[data-view=jobs]',
+      data: {
+        jobs: null
+      },
+      created: function () {
+        this.fetchData();
+      },
+      methods: {
+        fetchData: function () {
+          var self = this;
+          // Speakers
+          $.get(apiJobs, function(data) {
+            $('[data-id=jobs-loader]').fadeOut({
+              done: function(){
+                self.jobs = (data.feed.entry).reverse();
+                //console.log(self.jobs);
               }
             });
           });
@@ -231,5 +260,9 @@ $(document).ready(function(){
   if($('body').hasClass('type-homepage')){
     loadSpeakers();
     loadSponsors();
+    loadJobs();
+  }
+  if($('body').hasClass('page-jobs')){
+    loadJobs();
   }
 });

@@ -14,8 +14,8 @@
   Humeira Diljore - http://echdee.me
   Jochen Kirstätter - http://jochen.kirstaetter.name/
   Sean Mangar - http://seanmangar.com/
-  Nirvan (Tejas) Pagooah - http://graphicstemple.io/
+  Nirvan (Tejas) Pagooah - http://graphicstemple.io/ & http://nirvan.pagooah.com/
 
 /* SITE */
   Standards: HTML5, CSS3, SCSS
-  Components: 
+  Components: Vue.js, jQuery, SVG, underscore.js

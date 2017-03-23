@@ -135,7 +135,7 @@
                 <li><a href="sessions.html">Sessions</a></li>
                 <li><a href="/#sponsors">Sponsors</a></li>
                 <li><a href="/#speakers">Speakers</a></li>
-                <li><a href="#attendees.html">Attendees</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
                 <li><a href="extras.html">Extras</a></li>
                 <li><a href="mailto:conference@mscc.mu">Contact</a></li>
             </ul>
@@ -272,7 +272,7 @@
                     <li><a href="sessions.html">Sessions</a></li>
                     <li><a href="/#sponsors">Sponsors</a></li>
                     <li><a href="/#speakers">Speakers</a></li>
-                    <li><a href="#attendees.html">Attendees</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="extras.html">Extras</a></li>
                 </ul>
             </div>
@@ -296,131 +296,131 @@
 <script async type="text/javascript" src="assets/js/main.js"></script>
 
 <script>
-    $(function() {
-        var mapStyle =
-            [
-                {
-                    "featureType": "administrative",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#444444"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "color": "#f2f2f2"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "lightness": 45
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "saturation": "5"
-                        },
-                        {
-                            "color": "#c43232"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "color": "#bfbfbf"
-                        },
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "lightness": "4"
-                        }
-                    ]
-                }
-            ];
+  $(function() {
+    var mapStyle =
+      [
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#444444"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#f2f2f2"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry.stroke",
+          "stylers": [
+            {
+              "saturation": "5"
+            },
+            {
+              "color": "#c43232"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#bfbfbf"
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry.fill",
+          "stylers": [
+            {
+              "lightness": "4"
+            }
+          ]
+        }
+      ];
 
-        var map = new google.maps.Map($('.map')[0], {
-            zoom: 15,
-            styles: mapStyle,
-            center: new google.maps.LatLng(-20.2234308,57.4942285)
-        });
-
-        var marker = new google.maps.Marker({
-            map: map,
-            icon: 'https://conference.mscc.mu/assets/images/favicon/mscc-touch-icon-48x48-fg.png',
-            position: new google.maps.LatLng(-20.2234308,57.4942285)
-        });
-
-        var info = new SnazzyInfoWindow({
-            marker: marker,
-            content: '<h1>Voila Hotel</h1>' +
-                '<h2>Mall of Mauritius</h2>' +
-                '<p>We are right here! (-20.2234308,57.4942285)</p>',
-            closeOnMapClick: false
-        });
-        info.open();
+    var map = new google.maps.Map($('.map')[0], {
+      zoom: 15,
+      styles: mapStyle,
+      center: new google.maps.LatLng(-20.2234308,57.4942285)
     });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      icon: 'https://conference.mscc.mu/assets/images/favicon/mscc-touch-icon-48x48-fg.png',
+      position: new google.maps.LatLng(-20.2234308,57.4942285)
+    });
+
+    var info = new SnazzyInfoWindow({
+      marker: marker,
+      content: '<h1>Voila Hotel</h1>' +
+      '<h2>Mall of Mauritius</h2>' +
+      '<p>We are right here! (-20.2234308,57.4942285)</p>',
+      closeOnMapClick: false
+    });
+    info.open();
+  });
 </script>
 
 </body>
