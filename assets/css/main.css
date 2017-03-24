@@ -901,6 +901,22 @@ Fonts by Nirvan
   min-height: 500px;
 }
 
+.container-fw-half .left-container-wrapper.image-block-extra-aug, .container-fw-half .right-container-wrapper.image-block-extra-aug {
+  background-image: url(../images/aug.jpg);
+  background-size: cover;
+  background-position: left center;
+  display: block;
+  min-height: 500px;
+}
+
+.container-fw-half .left-container-wrapper.image-block-extra-drupal, .container-fw-half .right-container-wrapper.image-block-extra-drupal {
+  background-image: url(../images/drupalmauritius.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
 .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
   background-image: url(../images/devcon_2016.jpg);
   background-size: cover;
