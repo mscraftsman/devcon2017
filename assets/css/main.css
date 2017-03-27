@@ -820,6 +820,12 @@ Fonts by Nirvan
   width: calc(99.9% * 1/2);
   display: block;
   line-height: 0px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container-fw-half .left-container-wrapper:nth-child(1n), .container-fw-half .right-container-wrapper:nth-child(1n) {
@@ -839,6 +845,12 @@ Fonts by Nirvan
 
 .container-fw-half .left-container-wrapper:nth-child(2n + 1), .container-fw-half .right-container-wrapper:nth-child(2n + 1) {
   clear: both;
+}
+
+.container-fw-half .left-container-wrapper .content-wrapper, .container-fw-half .right-container-wrapper .content-wrapper {
+  -ms-grid-row-align: center;
+      -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .container-fw-half .left-container-wrapper p a, .container-fw-half .right-container-wrapper p a {
