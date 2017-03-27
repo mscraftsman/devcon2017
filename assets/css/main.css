@@ -794,9 +794,6 @@ Fonts by Nirvan
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -823,6 +820,12 @@ Fonts by Nirvan
   width: calc(99.9% * 1/2);
   display: block;
   line-height: 0px;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container-fw-half .left-container-wrapper:nth-child(1n), .container-fw-half .right-container-wrapper:nth-child(1n) {
@@ -844,6 +847,12 @@ Fonts by Nirvan
   clear: both;
 }
 
+.container-fw-half .left-container-wrapper .content-wrapper, .container-fw-half .right-container-wrapper .content-wrapper {
+  -ms-grid-row-align: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .container-fw-half .left-container-wrapper p a, .container-fw-half .right-container-wrapper p a {
   color: #FF3A00;
   text-decoration: none;
@@ -860,6 +869,7 @@ Fonts by Nirvan
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-venue-second {
@@ -868,6 +878,7 @@ Fonts by Nirvan
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-first {
@@ -876,6 +887,7 @@ Fonts by Nirvan
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-second {
@@ -883,6 +895,7 @@ Fonts by Nirvan
   background-size: cover;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-php {
@@ -891,6 +904,7 @@ Fonts by Nirvan
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-symfony {
@@ -899,14 +913,16 @@ Fonts by Nirvan
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
-.container-fw-half .left-container-wrapper.image-block-extra-aug, .container-fw-half .right-container-wrapper.image-block-extra-aug {
-  background-image: url(../images/aug.jpg);
+.container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
+  background-image: url(../images/devcon_2016.jpg);
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.image-block-extra-drupal, .container-fw-half .right-container-wrapper.image-block-extra-drupal {
@@ -917,12 +933,13 @@ Fonts by Nirvan
   min-height: 500px;
 }
 
-.container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper.image-block-extra-third {
-  background-image: url(../images/devcon_2016.jpg);
+.container-fw-half .left-container-wrapper.image-block-extra-aug, .container-fw-half .right-container-wrapper.image-block-extra-aug {
+  background-image: url(../images/aug.jpg);
   background-size: cover;
   background-position: center center;
   display: block;
   min-height: 500px;
+  background-repeat: no-repeat;
 }
 
 .container-fw-half .left-container-wrapper.no-padding, .container-fw-half .right-container-wrapper.no-padding {
@@ -1039,7 +1056,7 @@ Fonts by Nirvan
     max-height: 40vh;
     min-height: 40vh;
   }
-  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper .map {
+  .container-fw-half .left-container-wrapper.image-block-venue-first, .container-fw-half .left-container-wrapper.image-block-venue-second, .container-fw-half .left-container-wrapper.image-block-extra-first, .container-fw-half .left-container-wrapper.image-block-extra-second, .container-fw-half .left-container-wrapper.image-block-extra-php, .container-fw-half .left-container-wrapper.image-block-extra-drupal, .container-fw-half .left-container-wrapper.image-block-extra-aug, .container-fw-half .left-container-wrapper.image-block-extra-symfony, .container-fw-half .left-container-wrapper.image-block-extra-third, .container-fw-half .left-container-wrapper .map, .container-fw-half .right-container-wrapper.image-block-venue-first, .container-fw-half .right-container-wrapper.image-block-venue-second, .container-fw-half .right-container-wrapper.image-block-extra-first, .container-fw-half .right-container-wrapper.image-block-extra-second, .container-fw-half .right-container-wrapper.image-block-extra-php, .container-fw-half .right-container-wrapper.image-block-extra-drupal, .container-fw-half .right-container-wrapper.image-block-extra-aug, .container-fw-half .right-container-wrapper.image-block-extra-symfony, .container-fw-half .right-container-wrapper.image-block-extra-third, .container-fw-half .right-container-wrapper .map {
     min-height: 300px;
   }
 }
