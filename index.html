@@ -361,7 +361,7 @@
         <div class="jobs-container" data-view="jobs">
           <template v-if="jobs != null">
             <template v-for="(job, index) in jobs">
-              <template v-if="job.gsx$approved.$t == 1 && index <= 5">
+              <template v-if="job.gsx$approved.$t == 1">
                 <div class="job-wrapper" v-bind:data-job="index">
                   <div class="title-company-wrapper">
                     <div class="job-company">{{job.gsx$companyemployer.$t}}</div>
@@ -373,16 +373,15 @@
                 </div>
               </template>
             </template>
-            <div class="more-jobs-wrapper">
-              <a href="jobs.html">View more jobs</a>
-            </div>
           </template>
           <template v-else>
             <div class="job-wrapper no-jobs">
               Currently there are no active job listings. Stay tuned.
             </div>
           </template>
-
+        </div>
+        <div class="more-jobs-wrapper">
+          <a href="jobs.html">View all jobs</a>
         </div>
       </div>
     </div>
