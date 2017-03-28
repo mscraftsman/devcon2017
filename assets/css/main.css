@@ -3394,7 +3394,9 @@ header .mobile-menu-wrapper button .bars .bar {
 }
 
 .jobs-container {
-  max-height: 500px;
+  max-height: 428px;
+  overflow-y: scroll;
+  padding-right: 25px;
 }
 
 .jobs-container:before {
@@ -3406,6 +3408,19 @@ header .mobile-menu-wrapper button .bars .bar {
   content: '';
   display: table;
   clear: both;
+}
+
+.jobs-container::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+.jobs-container::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.jobs-container::-webkit-scrollbar-thumb {
+  background-color: #000000;
 }
 
 .jobs-container .job-wrapper {
@@ -3537,18 +3552,22 @@ header .mobile-menu-wrapper button .bars .bar {
   border-bottom: 0;
 }
 
-.jobs-container .more-jobs-wrapper:before {
+.more-jobs-wrapper {
+  padding-top: 20px;
+}
+
+.more-jobs-wrapper:before {
   content: '';
   display: table;
 }
 
-.jobs-container .more-jobs-wrapper:after {
+.more-jobs-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.jobs-container .more-jobs-wrapper a {
+.more-jobs-wrapper a {
   color: #FF3A00;
   font-weight: 500;
   text-transform: uppercase;
