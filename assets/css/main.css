@@ -933,6 +933,15 @@ Fonts by Nirvan
   min-height: 500px;
 }
 
+
+.container-fw-half .left-container-wrapper.image-block-made-mauritius, .container-fw-half .right-container-wrapper.image-block-made-mauritius{
+  background-image: url(../images/made-in-mauritius.png);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  min-height: 500px;
+}
+
 .container-fw-half .left-container-wrapper.image-block-extra-aug, .container-fw-half .right-container-wrapper.image-block-extra-aug {
   background-image: url(../images/aug.jpg);
   background-size: cover;
