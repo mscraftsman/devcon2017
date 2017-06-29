@@ -130,7 +130,7 @@
       <a href="/"><img src="/assets/images/logo.svg" alt=""></a>
     </div>
     <div class="mobile-menu-wrapper">
-      <button data-id="mobile-menu">
+      <button data-id="mobile-menu" aria-label="Mobile menu">
         <div class="bars">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -209,7 +209,7 @@
       </div>
     </div>
     <div class="right-container-wrapper">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/6ITHnbYgglo" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/6ITHnbYgglo" title="2016 Recap (Credits: L'Express Maurice)" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -282,11 +282,13 @@
             <template v-if="speaker.gsx$twitter.$t != ''">
             <a target="_blank" v-bind:href="'https://twitter.com/' + speaker.gsx$twitter.$t">
               <i class="ion-social-twitter"></i>
+              <i class="link-hidden">Twitter: {{speaker.gsx$twitter.$t}}</i>
             </a>
             </template>
             <template v-if="speaker.gsx$link.$t != ''">
             <a target="_blank" v-bind:href="speaker.gsx$link.$t">
               <i class="ion-code"></i>
+              <i class="link-hidden">Website: {{speaker.gsx$link.$t}}</i>
             </a>
             </template>
           </div>
