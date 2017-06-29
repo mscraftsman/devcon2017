@@ -280,13 +280,13 @@
           <div class="speaker-details-name" v-html="speaker.gsx$fullname.$t"></div>
           <div class="speaker-social-media">
             <template v-if="speaker.gsx$twitter.$t != ''">
-            <a target="_blank" v-bind:href="'https://twitter.com/' + speaker.gsx$twitter.$t">
+            <a target="_blank" rel="noopener" v-bind:href="'https://twitter.com/' + speaker.gsx$twitter.$t">
               <i class="ion-social-twitter"></i>
               <i class="link-hidden">Twitter: {{speaker.gsx$twitter.$t}}</i>
             </a>
             </template>
             <template v-if="speaker.gsx$link.$t != ''">
-            <a target="_blank" v-bind:href="speaker.gsx$link.$t">
+            <a target="_blank" rel="noopener" v-bind:href="speaker.gsx$link.$t">
               <i class="ion-code"></i>
               <i class="link-hidden">Website: {{speaker.gsx$link.$t}}</i>
             </a>
