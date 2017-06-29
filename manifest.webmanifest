@@ -2,7 +2,7 @@
     "short_name": "DevCon 2017",
     "name": "Developers Conference 2017 - Mauritius",
     "description": "Get latest updates about 3rd edition of Developers Conference in Mauritius",
-    "start_url": "./?utm_source=web_app_manifest",
+    "start_url": "https://conference.mscc.mu/?utm_source=web_app_manifest",
     "prefer_related_applications": true,
     "related_applications": [
         {
