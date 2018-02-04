@@ -1,4 +1,4 @@
-# [Developers Conference 2017](https://conference.mscc.mu/)
+# [Developers Conference 2017](https://2017.mscc.mu/)
 The website of Developers Conference 2017 in Mauritius is based on a combination
 of different frameworks and libraries:
 
