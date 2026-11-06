@@ -80,7 +80,7 @@ self.addEventListener('fetch', event => {
   // which checks for a GET request with an Accept: text/html header.
   if (event.request.mode === 'navigate' ||
       (event.request.method === 'GET' &&
-       event.request.headers.get('accept').includes('text/html'))) {
+       (event.request.headers.get('accept') || '').includes('text/html'))) {
     console.log('Handling fetch event for', event.request.url);
     event.respondWith(
       fetch(event.request).catch(error => {
