@@ -55,9 +55,9 @@
   <meta name='category' content="" />
   <meta name='date' content="" />
 
-  <meta sessionprop="name" content="Sessions / Developers Conference 2017 - Mauritius" />
-  <meta sessionprop="description" content="The Developers Conference 2017 is a 3-day event going to take place between 30th March and 1st April 2017. The Mauritius Software Craftsmanship Community (MSCC) is going to organise this event in corporation with local and international sponsors and partners." />
-  <meta sessionprop="image" content="" />
+  <meta itemprop="name" content="Sessions / Developers Conference 2017 - Mauritius" />
+  <meta itemprop="description" content="The Developers Conference 2017 is a 3-day event going to take place between 30th March and 1st April 2017. The Mauritius Software Craftsmanship Community (MSCC) is going to organise this event in corporation with local and international sponsors and partners." />
+  <meta itemprop="image" content="" />
 
   <meta property="og:title" content="Sessions / Developers Conference 2017 - Mauritius" />
   <meta property="og:type" content="website" />
@@ -103,7 +103,7 @@
             "startDate": "2017-03-30T09:00",
             "endDate": "2017-04-01T17:30",
             "url": "https://conference.mscc.mu",
-            "image": "https://conference.mscc.mu/assets/images/banner-280-409.png",
+            "image": "https://conference.mscc.mu/assets/images/banner-280x409.png",
             "location": {
                 "@type": "Place",
                 "sameAs": "http://www.voilahotel.mu/",
@@ -125,7 +125,7 @@
 <header class="header-container" data-id="menu">
   <div class="container-fw">
     <div class="logo-wrapper">
-      <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+      <a href="/" aria-hidden="true"><img src="/assets/images/logo.svg" alt="Logo of Mauritius Software Craftsmanship Community"></a>
     </div>
     <div class="mobile-menu-wrapper">
       <button data-id="mobile-menu" aria-label="Mobile menu">
@@ -205,7 +205,7 @@
   <div class="section-wrapper">
     <div class="container-fw">
     <div class="section-title-wrapper">
-      <small>31th March 2017</small>
+      <small>31st March 2017</small>
       <h2>Friday</h2>
     </div>
     <div class="section-content-wrapper">
@@ -244,7 +244,7 @@
   <div class="section-wrapper grey-bg">
     <div class="container-fw">
       <div class="section-title-wrapper">
-        <small>1st Aril 2017</small>
+        <small>1st April 2017</small>
         <h2>Saturday</h2>
       </div>
       <div class="section-content-wrapper">
@@ -289,12 +289,12 @@
 
       <div class="social-media-wrapper">
                 <span itemscope itemtype="http://schema.org/Organization">
-                    <link itemprop="url" href="https://www.mscc.mu">
-                    <a itemprop="sameAs" href="https://www.facebook.com/MauritiusSoftwareCraftsmanshipCommunity/" target="_blank" rel="noopener"><i class="ion-social-facebook"></i></a>
-                    <a itemprop="sameAs" href="https://plus.google.com/109537765013108874281" target="_blank" rel="noopener"><i class="ion-social-googleplus"></i></a>
-                    <a itemprop="sameAs" href="https://twitter.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-twitter"></i></a>
-                    <a itemprop="sameAs" href="https://www.linkedin.com/groups/5033639" target="_blank" rel="noopener"><i class="ion-social-linkedin"></i></a>
-                    <a itemprop="sameAs" href="https://github.com/mscraftsman" target="_blank" rel="noopener"><i class="ion-social-github"></i></a>
+                    <link itemprop="url" href="https://www.mscc.mu/">
+                    <a itemprop="sameAs" href="https://www.facebook.com/MauritiusSoftwareCraftsmanshipCommunity/" target="_blank" rel="noopener" aria-label="MSCC on Facebook"><i class="ion-social-facebook"></i></a>
+                    <a itemprop="sameAs" href="https://plus.google.com/109537765013108874281" target="_blank" rel="noopener" aria-label="MSCC on Google+"><i class="ion-social-googleplus"></i></a>
+                    <a itemprop="sameAs" href="https://twitter.com/mscraftsman" target="_blank" rel="noopener" aria-label="MSCC on Twitter"><i class="ion-social-twitter"></i></a>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/groups/5033639" target="_blank" rel="noopener" aria-label="MSCC on LinkedIn"><i class="ion-social-linkedin"></i></a>
+                    <a itemprop="sameAs" href="https://github.com/mscraftsman" target="_blank" rel="noopener" aria-label="MSCC on GitHub"><i class="ion-social-github"></i></a>
                 </span>
       </div>
 
@@ -464,6 +464,7 @@
                       v-bind:info_room="session.gsx$room.$t"
                       v-bind:info_abstract="session.gsx$abstract.$t"
                       v-bind:info_session="session"
+                      v-bind:info_show_modal="itinerary_showmodal"
                   ></mobileinformation>
                   <!-- Mobile only -->
                 </div>
@@ -482,6 +483,7 @@
                       v-bind:info_room="session.gsx$room.$t"
                       v-bind:info_abstract="session.gsx$abstract.$t"
                       v-bind:info_session="session"
+                      v-bind:info_show_modal="itinerary_showmodal"
                   ></mobileinformation>
                   <!-- Mobile only -->
                 </div>
@@ -497,7 +499,7 @@
 
 <!-- Modal template -->
 <div class="remodal" data-remodal-id="session">
-  <button data-remodal-action="close" class="remodal-close"></button>
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
   <h1 data-modal-info="title"></h1>
 
   <div class="session-information-table">
@@ -513,7 +515,7 @@
       <div class="info-cell-wrapper">
         <label>Room</label> <span class="data" data-modal-info="room"></span>
       </div>
-      <div class="info-cell-wrapper" data-level-wrapper="level" class="no-display">
+      <div class="info-cell-wrapper no-display" data-level-wrapper="level">
         <label>Level</label> <span class="level" data-level="" data-modal-info="level"></span>
       </div>
     </div>
@@ -523,7 +525,7 @@
 <!-- Modal template -->
 
 <script type="text/javascript" src="assets/js/vendor/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/service-worker-registration.js"></script>
+<script async type="text/javascript" src="assets/js/service-worker-registration.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/underscore-min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/vue.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/remodal/remodal.min.js"></script>

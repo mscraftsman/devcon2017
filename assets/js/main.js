@@ -242,7 +242,7 @@ $(document).ready(function(){
           $.get(apiJobs, function(data) {
             $('[data-id=jobs-loader]').fadeOut({
               done: function(){
-                self.jobs = (data.feed.entry).reverse();
+                self.jobs = data.feed.entry ? (data.feed.entry).reverse() : null;
                 //console.log(self.jobs);
               }
             });
